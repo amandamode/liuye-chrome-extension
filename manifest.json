@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "留页 · 标签与待读",
+  "version": "0.3.0",
+  "minimum_chrome_version": "120",
+  "description": "收好没看完的网页：查重、待读、正文提取、阅读材料和 Markdown 导出。",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "alarms"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "打开留页"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

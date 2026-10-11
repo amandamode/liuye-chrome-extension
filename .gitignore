@@ -1,0 +1,17 @@
+# Local operating-system and development files
+.DS_Store
+node_modules/
+coverage/
+*.log
+*.zip
+
+# Private records, credentials and personal exports
+聊天记录/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+留页收藏备份*.json
+阅读材料*.txt
+private/
